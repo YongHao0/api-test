@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./css/dragula-3.7.2.css">
+  <link rel="stylesheet" href="./css/main.css">
+  
+  <script src="./lib/dragula-3.7.2.min.js"></script>
+  <script src="./lib/RongIMLib-2.5.3.js"></script>
+
+  <script src="./js/utils.js"></script>
+
+  <title>Api Test</title>
+</head>
+<body>
+
+  <div id="apiOpt" class="api-left-opt"></div>
+
+  <div id="apiList" class="api-right-list">
+    <div id="init" class="api-btn">init(初始化)</div>
+    <div id="init" class="api-btn">connect(链接)</div>
+  </div>
+
+</body>
+
+<script>
+  dragula([document.getElementById('apiOpt'), document.getElementById('apiList')], {
+    copy: true,
+    direction: 'horizontal'
+  });
+</script>
+
+</html>
